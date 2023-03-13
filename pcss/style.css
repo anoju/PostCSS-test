@@ -28,3 +28,38 @@ a {
 .btn:hover {
   background-color: #0f7ae5;
 }
+
+.inner {
+  text-align: center;
+}
+
+/* postcss-assets */
+.thumb {
+  margin-top: 1rem;
+  width: width(thumb-temp.jpg, 2);
+  height: height(thumb-temp.jpg, 2);
+  background: resolve(thumb-temp.jpg) no-repeat center center /
+    size(thumb-temp.jpg, 2);
+  p {
+    display: block;
+  }
+}
+[class^='ico_'] {
+  display: inline-block;
+  width: width(sprite/ico_firefox.png);
+  height: height(sprite/ico_firefox.png);
+  background-repeat: no-repeat;
+}
+.ico_firefox {
+  /* sprite 이미지는 resolve 쓰면 안됨*/
+  background: url(../images/sprite/ico_firefox.png);
+}
+.ico_ie {
+  background: url(../images/sprite/ico_ie.png);
+}
+.ico_opera {
+  background: url(../images/sprite/ico_opera.png);
+}
+.ico_safari {
+  background: url(../images/sprite/ico_safari.png);
+}
