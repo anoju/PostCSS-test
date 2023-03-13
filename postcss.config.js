@@ -11,6 +11,9 @@ module.exports = {
       retina: true
     }),
     require('postcss-import'),
+    require('postcss-write-svg')({
+      utf8: false
+    }),
     require('postcss-inline-svg')(),
     // postcss-nested 쓸바엔 SCSS?
     require('postcss-nested'),
