@@ -63,42 +63,9 @@ a {
 .ico_safari {
   background: url(../images/sprite/ico_safari.png);
 }
-@svg square {
-  @rect {
-    fill: var(--color, black);
-    width: var(--size);
-    height: var(--size);
-  }
-}
-.square {
-  width: 20px;
-  height: 20px;
-  background: svg(square param(--color green) param(--size 100%)) center / cover;
-}
-
-@svg arrow-left {
-  @polygon {
-    fill: black;
-    points: 0, 0 0, 10 5, 5;
-    width: 10px;
-    height: 10px;
-  }
-}
-.arrow-left {
-  width: 20px;
-  height: 20px;
-  background: svg(arrow-left) center / cover;
-}
-@svg arrow-right {
-  @polygon {
-    fill: black;
-    points: 5, 5 10, 0 10, 10;
-    width: 10px;
-    height: 10px;
-  }
-}
-.arrow-right {
-  width: 20px;
-  height: 20px;
-  background: svg(arrow-right) center / cover;
+.sass {
+  width: width(svg/sass-logo.svg, 2);
+  height: height(svg/sass-logo.svg, 2);
+  background: svg-load(../images/svg/sass-logo.svg, fill: #dd0000) no-repeat
+    center / contain;
 }

@@ -11,10 +11,11 @@ module.exports = {
       retina: true
     }),
     require('postcss-import'),
-    require('postcss-write-svg')({
-      utf8: false
+    require('postcss-inline-svg')({
+      // paths: './images/svg/',
+      removeFill: true,
+      removeStroke: true
     }),
-    require('postcss-inline-svg')(),
     // postcss-nested 쓸바엔 SCSS?
     require('postcss-nested'),
     require('autoprefixer'),
